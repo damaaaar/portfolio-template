@@ -1,0 +1,11 @@
+.proyectos__tecnologia--html {
+  background-image: url(../../../extras/html.svg);
+}
+
+.proyectos__tecnologia--css {
+  background-image: url(../../../extras/css.svg);
+}
+
+.proyectos__tecnologia--js {
+  background-image: url(../../../extras/js.svg);
+}

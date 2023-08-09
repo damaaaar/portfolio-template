@@ -1,0 +1,90 @@
+.header {
+  height: 3.5rem;
+  padding: 0 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__titulo {
+  font-size: small;
+  color: var(--negro);
+  font-weight: bold;
+  padding-left: 2rem;
+  background: url(../../extras/brillito.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.header__nav {
+  width: 35rem;
+  height: inherit;
+}
+
+.header__secciones {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__seccion {
+  font-size: small;
+  color: var(--negro);
+}
+
+.header__seccion--contacto {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: 0 4vw;
+  }
+
+  .header__titulo {
+    font-size: larger;
+    width: 15rem;
+  }
+
+  .header__secciones {
+    justify-content: end;
+  }
+
+  .header__seccion {
+    display: none;
+  }
+
+  .header__seccion--contacto {
+    display: initial;
+    font-size: larger;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 0 4vw;
+  }
+
+  .header__titulo {
+    font-size: initial;
+  }
+
+  .header__nav {
+    width: 10rem;
+  }
+
+  .header__secciones {
+    justify-content: end;
+  }
+
+  .header__seccion {
+    display: none;
+  }
+
+  .header__seccion--contacto {
+    display: initial;
+    font-size: initial;
+  }
+}

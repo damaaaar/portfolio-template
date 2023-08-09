@@ -1,0 +1,60 @@
+.main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__contenido {
+  background: #ffffff;
+  width: 35rem;
+  height: 15.5rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main__icono {
+  width: 5rem;
+  height: 5rem;
+  background-image: url(../../extras/incorrecto.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.main__texto {
+  font-size: larger;
+  margin: 1rem 0;
+}
+
+.main__volver {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--azul);
+  border-radius: 10px;
+  color: var(--azul);
+  padding: 0.7rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.main__volver:active {
+  border: 1px solid #ffffff;
+  background: var(--azul);
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding: 0 4vw;
+  }
+}
+
+.main__texto {
+  text-align: center;
+  margin: 1rem 2vw;
+}

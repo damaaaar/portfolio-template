@@ -1,0 +1,88 @@
+.hobbies {
+  padding: 1.5rem 10vw;
+}
+
+.hobbies__titulo {
+  color: var(--negro);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.hobbies__pasatiempos {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hobbies__pasatiempo {
+  background: #ffffff;
+  margin: 1rem 0;
+  width: 12vw;
+  height: 12vw;
+  position: relative;
+}
+
+.hobbies__nombre {
+  font-weight: bold;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding-top: 2.5rem;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.hobbies__nombre--deporte {
+  background-image: url(../../extras/deporte.svg);
+}
+
+.hobbies__nombre--guitarra {
+  background-image: url(../../extras/guitarra.svg);
+}
+
+.hobbies__nombre--musica {
+  background-image: url(../../extras/musica.svg);
+}
+
+.hobbies__nombre--leer {
+  background-image: url(../../extras/libro.svg);
+}
+
+.hobbies__nombre--peliculas {
+  background-image: url(../../extras/tv.svg);
+}
+
+.hobbies__nombre--juegos {
+  background-image: url(../../extras/juegos.svg);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hobbies {
+    padding: 1.5rem 4vw;
+  }
+
+  .hobbies__pasatiempos {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .hobbies__pasatiempo {
+    width: 43vw;
+    height: 25vh;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hobbies {
+    padding: 1.5rem 4vw;
+  }
+
+  .hobbies__pasatiempo {
+    width: 41vw;
+    height: 41vw;
+    margin: 1rem 0;
+  }
+}

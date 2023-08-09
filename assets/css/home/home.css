@@ -1,0 +1,120 @@
+.home {
+  padding: 2rem 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home__contenido {
+  width: 65%;
+}
+
+.home__presentacion {
+  color: var(--negro);
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.home__descripcion {
+  margin: 1rem 0;
+}
+
+.home__importante {
+  font-weight: bold;
+}
+
+.home__nombre {
+  font-style: italic;
+}
+
+.home__enlaces {
+  width: 23rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__enlace {
+  font-size: small;
+  padding-right: 1.5rem;
+  background-image: url(../../extras/flechita.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.home__fotografia {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.home__img {
+  margin-top: -2.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home {
+    padding: 2rem 4vw;
+  }
+
+  .home__enlace {
+    font-size: larger;
+    padding-right: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .home__fotografia {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .home__img {
+    margin-top: -2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .home {
+    padding: 1rem 4vw;
+    flex-direction: column-reverse;
+    align-items: initial;
+  }
+
+  .home__fotografia {
+    width: 13rem;
+    height: 13rem;
+    margin-bottom: 1rem;
+  }
+
+  .home__img {
+    margin-top: -1.5rem;
+  }
+
+  .home__contenido {
+    width: 100%;
+  }
+
+  .home__presentacion {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .home__descripcion {
+    text-align: justify;
+  }
+
+  .home__enlaces {
+    width: 100%;
+  }
+
+  .home__enlace {
+    font-size: smaller;
+    padding-right: 1.5rem;
+    margin-right: 2px;
+  }
+
+  .home__enlace--cv {
+    margin-right: 0;
+  }
+}

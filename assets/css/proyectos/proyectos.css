@@ -1,0 +1,172 @@
+.proyectos {
+  padding: 2rem 10vw;
+}
+
+.proyectos__titulo {
+  color: var(--negro);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.proyectos__contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.proyectos__proyecto {
+  background: #ffffff;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 21rem;
+  padding: 1rem;
+  max-height: 21rem;
+  min-height: 21rem;
+}
+
+.proyectos__ilustracion {
+  margin-bottom: 1.5rem;
+  filter: blur(1.5px);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.proyectos__ilustracion:hover {
+  transform: scale(1.2);
+  filter: none;
+  border-radius: 0;
+}
+
+.proyectos__ilustracion--pendiente {
+  width: 10.5rem;
+}
+
+.proyectos__nombre {
+  font-weight: bold;
+}
+
+.proyectos__tecnologias {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.proyectos__tecnologia {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.proyectos__tecnologia:hover {
+  transform: scale(1.2);
+}
+
+.proyectos__enlaces {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.proyectos__enlace {
+  color: var(--azul);
+  background: #ffffff;
+  border: 1px solid var(--azul);
+  width: 7rem;
+  height: 3rem;
+  margin-right: 1rem;
+  text-align: center;
+  line-height: 2.7rem;
+  height: 2.7rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.proyectos__enlace:active {
+  color: #ffffff;
+  background: var(--azul);
+  border: 1px solid #ffffff;
+}
+
+.proyectos__enlace--azul {
+  color: #ffffff;
+  background: var(--azul);
+  border: 1px solid #ffffff;
+}
+
+.proyectos__enlace--azul:active {
+  color: var(--azul);
+  background: #ffffff;
+  border: 1px solid var(--azul);
+}
+
+@media (min-width: 768px) and (max-width: 1204px) {
+  .proyectos {
+    padding: 2rem 4vw;
+  }
+
+  .proyectos__proyecto {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .proyectos__ilustracion {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    border-radius: 0;
+    filter: none;
+  }
+
+  .proyectos__ilustracion:hover {
+    transform: none;
+    filter: none;
+  }
+
+  .proyectos__tecnologia:hover {
+    transform: none;
+  }
+
+  .proyectos__ilustracion--pendiente {
+    width: 10.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .proyectos {
+    padding: 2rem 4vw;
+  }
+
+  .proyectos__proyecto {
+    flex-direction: column;
+    align-items: initial;
+    width: 100%;
+  }
+
+  .proyectos__ilustracion {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    filter: none;
+    border-radius: 0;
+  }
+
+  .proyectos__ilustracion:hover {
+    transform: none;
+    filter: none;
+  }
+
+  .proyectos__tecnologia:hover {
+    transform: none;
+  }
+
+  .proyectos__ilustracion--pendiente {
+    width: 10.5rem;
+  }
+}

@@ -1,0 +1,12 @@
+.footer {
+  padding: 1rem 10vw;
+}
+
+.footer__texto {
+  text-align: center;
+  font-size: small;
+}
+
+.footer__texto span {
+  font-weight: bold;
+}

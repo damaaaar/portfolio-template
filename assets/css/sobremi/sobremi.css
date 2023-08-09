@@ -1,0 +1,26 @@
+.sobremi {
+  background: var(--celeste);
+  padding: 3.5rem 10vw;
+}
+
+.sobremi__titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--negro);
+}
+
+.sobremi__descripcion {
+  margin: 1rem 0 0 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sobremi {
+    padding: 3.5rem 4vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .sobremi {
+    padding: 3rem 4vw;
+  }
+}

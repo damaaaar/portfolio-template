@@ -1,0 +1,122 @@
+.contacto {
+  padding: 2rem 10vw;
+  background: var(--celeste);
+  display: flex;
+}
+
+.contacto__ilustracion {
+  width: 22rem;
+  margin-right: 1rem;
+}
+
+.contacto__contenido {
+  width: 100%;
+}
+
+.contacto__titulo {
+  font-size: 1.5rem;
+  color: var(--negro);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contacto__input {
+  background: #ffffff;
+  width: 100%;
+  margin: 1.5rem 0;
+  height: 2.6rem;
+  padding: 1rem;
+  outline: none;
+}
+
+.contacto__input:focus::placeholder {
+  color: var(--azul);
+}
+
+.contacto__input:focus {
+  border-bottom: 2px solid var(--azul);
+}
+
+.contacto__textarea {
+  background: #ffffff;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  outline: none;
+  height: 5.9rem;
+}
+
+.contacto__textarea:focus::placeholder {
+  color: var(--azul);
+}
+
+.contacto__textarea:focus {
+  border-bottom: 2px solid var(--azul);
+}
+
+.contacto__boton {
+  background: var(--azul);
+  padding: 0.5rem;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.contacto__boton:active {
+  background: #ffffff;
+  color: var(--azul);
+  border: 1px solid var(--azul);
+}
+
+.vacio {
+  border: 1px solid var(--rojo);
+}
+
+.vacio::placeholder {
+  color: var(--rojo);
+}
+
+.vacio:focus::placeholder {
+  color: var(--rojo);
+}
+
+.vacio:focus {
+  border-bottom: 2px solid var(--rojo);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contacto {
+    padding: 2rem 4vw;
+  }
+
+  .contacto__ilustracion {
+    display: none;
+  }
+
+  .contacto__input {
+    height: 4rem;
+  }
+
+  .contacto__textarea {
+    height: 9rem;
+  }
+
+  .contacto__boton {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacto {
+    padding: 2rem 4vw;
+  }
+
+  .contacto__ilustracion {
+    display: none;
+  }
+
+  .contacto__textarea {
+    height: 10rem;
+  }
+}

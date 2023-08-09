@@ -1,0 +1,86 @@
+.skills {
+  padding: 1.5rem 10vw;
+}
+
+.skills__titulo {
+  color: var(--negro);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.skills__habilidades {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills__habilidad {
+  background: #ffffff;
+  width: 12vw;
+  height: 12vw;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.skills__nombre {
+  font-weight: bold;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding-top: 2.5rem;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.skills__nombre--html {
+  text-transform: uppercase;
+  background-image: url(../../extras/html.svg);
+}
+
+.skills__nombre--css {
+  text-transform: uppercase;
+  background-image: url(../../extras/css.svg);
+}
+
+.skills__nombre--js {
+  background-image: url(../../extras/js.svg);
+}
+
+.skills__nombre--git {
+  padding-right: 1rem;
+  background-image: url(../../extras/git.svg);
+}
+
+.skills__nombre--github {
+  background-image: url(../../extras/github.svg);
+}
+
+.skills__nombre--vs {
+  background-image: url(../../extras/vs.svg);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills {
+    padding: 1.5rem 4vw;
+  }
+
+  .skills__habilidad {
+    width: 43vw;
+    height: 25vh;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills {
+    padding: 1.5rem 4vw;
+  }
+
+  .skills__habilidad {
+    width: 41vw;
+    height: 41vw;
+    margin: 1rem 0;
+  }
+}
