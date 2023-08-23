@@ -2,24 +2,24 @@
   --color-primario: #181818;
   --color-secundario: #f0f0f0;
 
-  --fuente-principal: 'Roboto', sans-serif;
+  --fuente-principal: "Roboto", sans-serif;
 }
 
-/*@media (prefers-color-scheme: dark){
+/*ii@media (prefers-color-scheme: dark){
   :root{
     --color-primario: #f0f0f0;
     --color-secundario: #181818;
   }
 }*/
 
-@media (prefers-contrast: high){
-  :root{
+@media (prefers-contrast: high) {
+  :root {
     --color-primario: black;
     --color-secundario: white;
   }
 }
 
-@media (prefers-reduced-motion: reduce){
+@media (prefers-reduced-motion: reduce) {
   * {
     animation: none;
     transition: none;
@@ -34,7 +34,11 @@
   vertical-align: baseline;
 }
 
-img, picture, video, iframe, figure {
+img,
+picture,
+video,
+iframe,
+figure {
   max-width: 100%;
   width: 100%;
   display: block;
@@ -56,7 +60,21 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
   font-size: 1em;
   font-weight: inherit;
   font-size: inherit;
@@ -64,8 +82,11 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
   color: inherit;
 }
 
-blockquote::before, blockquote::after, q::before, q::after {
-  content: '';
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
   content: none;
 }
 
@@ -74,16 +95,23 @@ blockquote::before, blockquote::after, q::before, q::after {
   color: var(--color-secundario);
 }
 
-form, input, textarea, select, button, label {
+form,
+input,
+textarea,
+select,
+button,
+label {
   font-family: inherit;
   font-size: inherit;
   hyphens: auto;
   background-color: transparent;
   display: block;
-  color:inherit;
+  color: inherit;
 }
 
-table, tr, td {
+table,
+tr,
+td {
   border-collapse: collapse;
   border-spacing: 0;
 }
